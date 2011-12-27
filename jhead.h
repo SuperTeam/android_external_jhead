@@ -176,6 +176,7 @@ int Get16u(void * Short);
 unsigned Get32u(void * Long);
 int Get32s(void * Long);
 void Put32u(void * Value, unsigned PutValue);
+unsigned char* getExifBuf(char** attrlist, int attrCount, int* exifLen,int thumbnailLen,char* thumbnaildata);
 void create_EXIF(ExifElement_t* elements, int exifTagCount, int gpsTagCount);
 int TagNameToValue(const char* tagName);
 
